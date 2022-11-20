@@ -12,7 +12,7 @@ const DetailProduct = () => {
 
   const fetchProduct = async (id) => {
     try {
-      const url = `/api/v1/products/${id}`;
+      const url = `/users/${id}`;
       const response = await api.get(url);
       const payload = {...response?.data?.data?.product};
       console.log(payload);
@@ -31,8 +31,8 @@ const DetailProduct = () => {
     <>
     <div className='text-center text-2xl bg-primary text-white font-sans md:font-serif'>Detail Product</div>
     <p className='text-base font-serif m-5'>Nama Produk &nbsp;: {product?.name}</p>
-    <p className='text-base font-serif m-5 leading-3'>Harga Produk &nbsp;: {product?.price}</p>
-    <p className='text-base font-serif m-5'>Penjual &emsp; &emsp; &ensp;: {product?.ownerId?.name}</p>
+    <p className='text-base font-serif m-5 leading-3'>Harga Produk &nbsp;: {product?.id}</p>
+    <p className='text-base font-serif m-5'>Penjual &emsp; &emsp; &ensp;: {product?.email}</p>
     <Button type='primary' onClick={() => navigate(-1)}>Home</Button>
     </>
   )

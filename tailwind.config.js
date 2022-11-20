@@ -10,6 +10,8 @@ module.exports = {
       },
       colors: {
         primary:'#7126B5',
+        utama:'#8BD9CA',
+        kedua:'#5DA698'
       }
     },
   },

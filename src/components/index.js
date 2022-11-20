@@ -1,2 +1,5 @@
 export {default as ProductCard} from './product-card'
 export {default as Banner} from './banner'
+export {default as Navbar} from './navbar'
+export {default as History} from './history'
+export {default as CardHistory} from './card-history'
